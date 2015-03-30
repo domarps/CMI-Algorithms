@@ -7,14 +7,9 @@ Prof.Madhavan Mukund, CMI
 
 This course will cover basic concepts in the design and analysis of algorithms :
 
-* Asymptotic complexity, O() notation
-
+* Asymptotic complexity, O() notation 
 * Sorting and search
-
 * Algorithms on graphs: exploration, connectivity, shortest paths, directed acyclic graphs, spanning trees
-
 * Design techniques: divide and conquer, greedy, dynamic programming
-
 * Data structures: heaps, union of disjoint sets, search trees
-
 * Intractability
