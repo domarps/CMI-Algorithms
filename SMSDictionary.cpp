@@ -1,8 +1,9 @@
 
-//28 February 2015
-//Created by S Pramod <---> domarps
-//Problem Link : http://cprogrammingquest.blogspot.in/2015/01/sms-dictionary-sorting.html
-//(Indian National Olympiad in Informatics, INOI, 2007)
+/*28 February 2015
+  Created by S Pramod <---> domarps
+  Problem Link : http://cprogrammingquest.blogspot.in/2015/01/sms-dictionary-sorting.html
+(Indian National Olympiad in Informatics, INOI, 2007)
+*/
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
