@@ -1,7 +1,7 @@
 
 [Design-and-Analysis-of-Algorithms | Chennai Mathematical Institute](http://nptel.ac.in/courses/106106131/) 
 
-Prof.Mukund Madhavan, CMI
+Prof.Madhavan Mukund, CMI
 
 03 January 2015 - 30 March 2015
 
