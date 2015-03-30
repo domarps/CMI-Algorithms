@@ -4,36 +4,38 @@
 
 #define INF 1000000
 int n;
-int D[4000];
-int Q[4000];
-int A[4000][4000];
 
-void BreadthFirstSearch(int b)
+int Distance[4000];  
+int Q[4000];  // Queue it is
+int A[4000][4000]; //Adjacency Matrix, because the List is not for the weak hearted.
+
+void BreadthFirstSearch(int begin)
 {
-	int Head = 0;
+	int Headead = 0;
 	int Tail = -1;
 	int j,k;
-	D[b] = 0;
+	Distance[begin] = 0;
 
-	Q[T+1] = b;
-	T = T+1;
+	Q[Tail+1] = begin;
+	Tail = Tail+1;
 
-	while(T>=H){
-		j = Q[H];
+	while(Tail>=Head){
+		j = Q[Head];
 
 		for (k = 0;k < n; k++){
-			if(A[j][k] == 1 && D[k] == INF){
-				D[k] = D[j]+1;
-				Q[T+1] = k;
-				T = T+1;
+			if(A[j][k] == 1 && Distance[k] == INF)
+			{
+				Distance[k] = Distance[j]+1;
+				Q[Tail+1] = k;
+				Tail = Tail+1;
 			}
 		}
-
-		H = H+1;
+		Head = Head+1;
 	}
 }
 
-int main(){
+int main()
+{
 	int m;
 	scanf("%d%d",&n,&m);
 	int i,j;
@@ -41,39 +43,46 @@ int main(){
 
 	for(i = 0;i < n; i++)
 	{
-		D[i] = INF;
+		Distance[i] = INF;
 	}
 
-	for(i = 0;i < n; i++){
-		for(j = 0;j < n; j++){
+	for(i = 0;i < n; i++)
+	{
+		for(j = 0;j < n; j++)
+		{
 			A[i][j] = 0;
 		}
 	}
 
-	for(i = 0;i < m; i++){
+	for(i = 0;i < m; i++)
+	{
 		scanf("%d%d",&a,&b);
 		A[a-1][b-1] = 1;
 		A[b-1][a-1] = 1;
 	}
 
 
-	scanf("%d%d",&s,&t);
+	scanf("%d%d",&start,&finish);
 
 
-	if(s > 0 && t > 0 && s <= n && t <= n){
-		s--;
-		t--;
-		BreadthFirstSearch(s);
+	if(start > 0 && finish > 0 && s <= n && t <= n)
+	{
+		start--;
+		finish--;
+		BreadthFirstSearch(start);
 
-		if(D[t] == INF){
+		if(Distance[finish] == INF)
+		{
 			printf("0");
-		}else {
-			printf("%d",D[t]);
 		}
-	}else {
+		else 
+		{
+			printf("%d",Distance[finish]);
+		}
+	}
+	else
+	{
 		printf("0");
 	}
-
-
-	return 0;
+        return 0;
 }
