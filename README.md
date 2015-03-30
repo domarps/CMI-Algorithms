@@ -3,9 +3,9 @@
 
 Prof.Madhavan Mukund, CMI
 
-03 January 2015 - 30 March 2015
+Dates : 03 January 2015 - 30 March 2015
 
-This course will cover basic concepts in the design and analysis of algorithms :
+This course covered basic concepts in the design and analysis of algorithms :
 
 * Asymptotic complexity, O() notation 
 * Sorting and search
