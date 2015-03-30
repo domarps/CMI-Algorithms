@@ -1,4 +1,8 @@
-
+/*
+Problem Link: http://opc.iarcs.org.in/index.php/problems/GREATESC
+(IARCS OPC Archive, K Narayan Kumar, CMI)
+Created by S Pramod <-> domarps
+*/
 #include <stdio.h>
 #include <limits.h>
 
